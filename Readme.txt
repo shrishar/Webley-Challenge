@@ -42,9 +42,15 @@ First row always correspond to target price and it's values
 6) Program can handle price values such as $4.5 or 4.5 or 4.0 or 1
 7) All the combinations are returned in a list.
 
-Steps to run file:
+Steps to run file on linux machine :
+Git clone:
+1) Go to Webley-Challenge repository,click on clone/download
+2) copy https://github.com/shrishar/Webley-Challenge.git
+3) open terminal, write git clone https://github.com/shrishar/Webley-Challenge.git
+4) Files will be downloaded to your local machine.
+5) type ls
 
-
+linux machine
 
 open terminal:
 Go to Webley folder you cloned and run the following commands:
@@ -54,7 +60,15 @@ Go to Webley folder you cloned and run the following commands:
 2) hit ENTER
 3) you can see the results on your console
 
+Windows:
 
+open python shell and go to webley folder you cloned.
+Follow the steps :
+
+1) type python Solution_1.py file_path 
+   python Solution_1.py pricedata.csv
+2) hit ENTER
+3) you can see the results on your console
 
 
 
