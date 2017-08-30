@@ -41,7 +41,7 @@ First row always correspond to target price and it's values
 
 Steps to run file on linux machine :
 Git clone:
-1) Go to Webley-Challenge repository,click on clone/download
+1) Go to Webley-Challenge repository-https://github.com/shrishar/Webley-Challenge, click on clone/download
 2) copy https://github.com/shrishar/Webley-Challenge.git
 3) open terminal, write git clone https://github.com/shrishar/Webley-Challenge.git
 4) Files will be downloaded to your local machine.
