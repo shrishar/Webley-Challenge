@@ -92,21 +92,26 @@ def ReadCSV(CSV_Path):
         sys.exit()
 
 #---find combination----------------------------------------------------------------------------------------------------
+''' 
+I came with a recursive way of finding all the subset of price which adds up to target price.
+The find() function recursively computes the possible combination of items that add up to the target value. This function recursively calls itself twice for every iteration of the array, to match all possible combinations of the target value and the (target-previous) value. The results are appended to a list.    
+'''
 
-def find(arr, num,result,path=()):
+
+def FindSubset(arr, sum,result,subset=()):
     if not arr:
         return
-    if arr[0] == num:
-        result.append(path + (arr[0],))
+    if arr[0] == sum:
+        result.append(subset + (arr[0],))
     else:
-        find(arr[1:], num - arr[0],result, path + (arr[0],))
-        find(arr[1:], num, result,path)
+        FindSubset(arr[1:], sum - arr[0],result, subset + (arr[0],))
+        FindSubset(arr[1:], sum, result,subset)
 
 def FindCombination(targetprice,dict,checked_price):
     arr=[float(i) for i in checked_price] #creating an array of price values
     arr.sort()
     result=[] #combination result
-    find(arr, targetprice,result)# function which calculate combinations of prices
+    FindSubset(arr, targetprice,result)# function which calculate combinations of prices
     result=list(set(result)) # removing duplicate combinations
     newdict = new_dict(dict) # creating a new dictionary with prices as key and items as values.
     dishes=[]

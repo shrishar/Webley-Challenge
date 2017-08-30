@@ -18,10 +18,7 @@ Programming language : Python
 Version : Can be run on Python 3.3 or higher
 
 I came with a recursive way of finding all the subset of price which adds up to target price.
-
-
-
-
+The find() function recursively computes the possible combination of items that add up to the target value. This function recursively calls itself twice for every iteration of the array, to match all possible combinations of the target value and the (target-previous) value. The results are appended to a list.    
 
 Assumptions made:
 1)csv file is in the given format:
